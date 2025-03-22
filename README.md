@@ -34,3 +34,7 @@ A Dockerfile is akin to a set of instructions for Docker to create a Docker imag
 3. List and briefly explain the basic instructions used in a Dockerfile for building a Node.js Docker image.
 
 In the Dockerfile the instructions are: 1. FROM node:17-alpine this instruction says to begin we pull in the node image as our initial layer (note that we are using version 17 of node with the alpine distrubution of linux). 2. WORKDIR /app this instruction tells Docker that when we run future commands on the image we do it from the "/app" directory. 3. COPY . . this instruction copies some files to the image the first "." is a relative path to the directory that we want to copy our source files from, the second "." is the path inside the image that we want to copy our source code to in both cases the "." is just the root directory. 4. RUN npm install this instruction runs the command "npm install", installing all the dependencies we need. 5. EXPOSE 4000 this command indicates port 4000 which the container will listen for connections. 6. CMD ["node", "app.js"] this command specifes the commands to be run at runtime when the container begins to run in this case "node" and "app.js".
+
+## AI Declaration
+
+[AI Declaration Form](L5_AI_DECLARATION_ERIK_SCHAUFELE_301579449.pdf)
